@@ -4,14 +4,14 @@ const { askAgent } = require('../agents/agent.js')
 
 
 router.post('/', async (req, res) => {
-    const { question } = req.body;
+    const { query } = req.body;
 
-    if (!question) {
+    if (!query) {
         return res.status(400).json({ error: 'No question provided' });
     }
 
     try {
-        const answer = await askAgent(question);
+        const answer = await askAgent(query);
         res.json({ answer});
     } catch (err) {
         console.error('Error in /ask route:', err);
