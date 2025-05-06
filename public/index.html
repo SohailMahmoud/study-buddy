@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Buddy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to Study Buddy!</h1>
+    <h1>Buddy, just ask!</h1>
+    <div class="input-container" id="inputContainer">
+        <input type="text" placeholder="Ask anything" />
+        <button class="send-btn" id="sendBtn">➤</button>
+    </div>
+    
+    <div class="response-container" id="responseContainer">
+        <div class="response">
+            <p>Response will appear here...</p>
+            <button class="ask-btn">Ask another question</button>
+        </div>
+    </div>    
+    <script src="index.js" type="text/javascript"></script>
 </body>
+
 </html>
